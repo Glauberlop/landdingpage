@@ -1,4 +1,4 @@
-const { createGlobalStyle, css } = require('styled-components');
+const { createGlobalStyle } = require('styled-components');
 
 export const GlobalStyles = createGlobalStyle`
 
@@ -7,9 +7,5 @@ export const GlobalStyles = createGlobalStyle`
         padding: 0;
     }
 
-    body {
-       ${({ theme }) => css`
-       background:${theme.colors.secondaryBg}
-       `}
-    }
+    body {}
 `;
